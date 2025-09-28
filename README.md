@@ -17,38 +17,16 @@ This repository provides step-by-step tutorials and real-world examples covering
 
 ## 📁 Repository Structure
 
-```
-AgentframeworkInAction/
-├── 01.AgentFoundation/           # Core concepts and architecture
-├── 02.CreateYourFirstAgent/      # Getting started tutorials
-│   └── code_samples/
-│       ├── dotNET/              # C# implementation examples
-│       └── python/              # Python implementation examples
-├── 03.ExploerAgentFramework/    # Framework deep dive
-│   └── code_samples/
-│       ├── dotNET/              # .NET examples with various providers
-│       └── python/              # Python examples with different configurations
-├── 04.Tools/                    # Tool integration examples
-│   └── code_samples/
-│       ├── dotNET/              # Vision and code interpreter tools
-│       ├── files/               # Sample assets
-│       └── python/              # Python tool implementations
-├── 05.Providers/                # Provider patterns and integrations
-│   └── code_samples/
-│       └── dotNET/
-│           ├── 01-dotnet-agent-framework-aifoundry-mcp/
-│           └── 02-dotnet-agent-framework-aifoundry-a2a/
-├── 06.RAGs/                     # RAG implementation examples
-│   └── code_samples/
-│       ├── dotNET/              # .NET RAG implementations
-│       ├── files/               # Knowledge base files
-│       └── python/              # Python RAG examples
-├── 07.MultiAgents/              # Multi-agent system examples
-│   └── code_samples/
-│       ├── dotNET/              # Sequential multi-agent workflows
-│       └── files/               # Supporting assets
-└── 08.Workflow/                 # Workflow management patterns
-```
+| Directory | Description | .NET Code Samples | Python Code Samples |
+|-----------|-------------|-------------------|---------------------|
+| **00.ForBeginners** | **Beginner-friendly Microsoft Agent Framework examples extending [AI Agents for Beginners](https://github.com/microsoft/ai-agents-for-beginners)** | [Travel Agent](./00.ForBeginners/01-intro-to-ai-agents/code_samples/dotnet-agent-framework-travelagent.ipynb)<br/>[Basic Agent](./00.ForBeginners/02-explore-agentic-frameworks/code_samples/dotnet-agent-framework-basicagent.ipynb)<br/>[Design Patterns](./00.ForBeginners/03-agentic-design-patterns/code_samples/dotnet-agent-framework-ghmodel-basicagent.ipynb)<br/>[Tool Use](./00.ForBeginners/04-tool-use/code_samples/dotnet-agent-framework-ghmodels-tool.ipynb)<br/>[RAG Search](./00.ForBeginners/05-agentic-rag/code_samples/dotnet-agent-framework-aifoundry-file-search.ipynb)<br/>[Planning](./00.ForBeginners/07-planning-design/code_samples/dotnet-agent-framrwork-ghmodel-planningdesign.ipynb)<br/>[Multi-Agent](./00.ForBeginners/08-multi-agent/code_samples/dotnet-agent-framework-ghmodel-workflow-multi-agents.ipynb) | [Travel Agent](./00.ForBeginners/01-intro-to-ai-agents/code_samples/python-agent-framework-travelagent.ipynb)<br/>[Basic Agent](./00.ForBeginners/02-explore-agentic-frameworks/code_samples/python-agent-framework-basicagent.ipynb)<br/>[Design Patterns](./00.ForBeginners/03-agentic-design-patterns/code_samples/python-agent-framework-ghmodel-basicagent.ipynb)<br/>[Tool Use](./00.ForBeginners/04-tool-use/code_samples/python-agent-framework-ghmodel-tools.ipynb)<br/>[RAG Search](./00.ForBeginners/05-agentic-rag/code_samples/python-agent-framework-aifoundry-file-search.ipynb)<br/>[Planning](./00.ForBeginners/07-planning-design/code_samples/python-agent-framrwork-ghmodel-planningdesign.ipynb)<br/>[Multi-Agent](./00.ForBeginners/08-multi-agent/code_samples/python-agent-framework-ghmodel-workflow-multi-agents.ipynb) |
+| **01.AgentFoundation** | Core concepts and architecture of Microsoft Agent Framework | *Documentation Only* | *Documentation Only* |
+| **02.CreateYourFirstAgent** | Build your first travel planning agent from scratch | [Travel Agent with GitHub Models](./02.CreateYourFirstAgent/code_samples/dotNET/dotnet-travelagent-ghmodel.ipynb) | [Travel Agent with GitHub Models](./02.CreateYourFirstAgent/code_samples/python/python-travelagent-ghmodel.ipynb) |
+| **03.ExploreAgentFramework** | Deep dive into different providers and configurations | [Azure OpenAI](./03.ExploerAgentFramework/code_samples/dotNET/01-dotnet-agent-framework-aoai.ipynb)<br/>[GitHub Models](./03.ExploerAgentFramework/code_samples/dotNET/02-dotnet-agent-framrwork-ghmodel.ipynb)<br/>[AI Foundry](./03.ExploerAgentFramework/code_samples/dotNET/03-dotnet-agent-framework-aifoundry.ipynb)<br/>[Foundry Local](./03.ExploerAgentFramework/code_samples/dotNET/04-dotnet-agent-framework-foundrylocal.ipynb) | [Azure OpenAI](./03.ExploerAgentFramework/code_samples/python/01-python-agent-framework-aoai.ipynb)<br/>[GitHub Models](./03.ExploerAgentFramework/code_samples/python/02-python-agent-framrwork-ghmodel.ipynb)<br/>[AI Foundry](./03.ExploerAgentFramework/code_samples/python/03-python-agent-framework-aifoundry.ipynb)<br/>[Foundry Local](./03.ExploerAgentFramework/code_samples/python/04-python-agent-framrwork-foundrylocal.ipynb) |
+| **04.Tools** | Vision, code interpretation, and custom tool integration | [Vision](./04.Tools/code_samples/dotNET/foundry/01-dotnet-agent-framework-aifoundry-vision.ipynb)<br/>[Code Interpreter](./04.Tools/code_samples/dotNET/foundry/02-dotnet-agent-framework-aifoundry-code-interpreter.ipynb)<br/>[Bing Grounding](./04.Tools/code_samples/dotNET/foundry/03-dotnet-agent-framework-aifoundry-binggrounding.ipynb)<br/>[File Search](./04.Tools/code_samples/dotNET/foundry/04-dotnet-agent-framework-aifoundry-file-search.ipynb) | [Vision](./04.Tools/code_samples/python/foundry/01.python-agent-framework-aifoundry-vision.ipynb)<br/>[Code Interpreter](./04.Tools/code_samples/python/foundry/02.python-agent-framework-aifoundry-code-interpreter.ipynb)<br/>[Bing Grounding](./04.Tools/code_samples/python/foundry/03.python-agent-framework-aifoundry-binggrounding.ipynb)<br/>[File Search](./04.Tools/code_samples/python/foundry/04.python-agent-framework-aifoundry-file-search.ipynb) |
+| **05.Providers** | MCP (Model Context Protocol) and Agent-to-Agent communication | *Coming Soon* | [MCP Integration](./05.Providers/code_samples/python/01-python-agent-framework-aifoundry-mcp.ipynb) |
+| **06.RAGs** | Knowledge-enhanced agents with file search capabilities | [File Search RAG](./06.RAGs/code_samples/dotNET/dotnet-agent-framework-aifoundry-file-search.ipynb) | [File Search RAG](./06.RAGs/code_samples/python/python-agent-framework-aifoundry-file-search.ipynb) |
+| **07.Workflow** | Complex agent workflows and orchestration patterns | [Basic Workflow](./07.Workflow/code_samples/dotNET/01.dotnet-agent-framework-workflow-ghmodel-basic.ipynb)<br/>[Sequential](./07.Workflow/code_samples/dotNET/02.dotnet-agent-framework-workflow-ghmodel-sequential.ipynb)<br/>[Concurrent](./07.Workflow/code_samples/dotNET/03.dotnet-agent-framework-workflow-ghmodel-concurrent.ipynb)<br/>[Conditional](./07.Workflow/code_samples/dotNET/04.dotnet-agent-framework-workflow-aifoundry-condition.ipynb) | [Basic Workflow](./07.Workflow/code_samples/python/01.python-agent-framework-workflow-ghmodel-basic.ipynb)<br/>[Sequential](./07.Workflow/code_samples/python/02.python-agent-framework-workflow-ghmodel-sequential.ipynb)<br/>[Concurrent](./07.Workflow/code_samples/python/03.python-agent-framework-workflow-ghmodel-concurrent.ipynb)<br/>[Conditional](./07.Workflow/code_samples/python/04.python-agent-framework-workflow-aifoundry-condition.ipynb) |
 
 ## 🛠 Prerequisites
 
@@ -61,8 +39,7 @@ AgentframeworkInAction/
 ```bash
 
 pip uninstall agent-framework -y
-pip uninstall agent-framework-azure -y
-pip uninstall agent-framework-foundry -y
+pip uninstall agent-framework-azure-ai -y
 
 ! pip install -r Installation\code_samples\python\requirements.txt --constraint Installation\code_samples\python\constraints.txt -U
 
@@ -171,19 +148,21 @@ Console.WriteLine(response);
 
 ## 📚 Tutorial Progression
 
-### Beginner Level
-1. **01.AgentFoundation** - Understand the core concepts
-2. **02.CreateYourFirstAgent** - Build a simple travel agent
+### Getting Started Level
+0. **00.ForBeginners** - Comprehensive beginner tutorials with Microsoft Agent Framework examples
+
+### Foundation Level
+1. **01.AgentFoundation** - Understand the core concepts and architecture
+2. **02.CreateYourFirstAgent** - Build your first travel planning agent
 
 ### Intermediate Level
-3. **03.ExploerAgentFramework** - Explore different providers (Azure OpenAI, GitHub Models, AI Foundry)
-4. **04.Tools** - Add vision and code interpretation capabilities
-5. **06.RAGs** - Implement knowledge-enhanced agents
+3. **03.ExploreAgentFramework** - Explore different providers (Azure OpenAI, GitHub Models, AI Foundry)
+4. **04.Tools** - Add vision, code interpretation, and custom tool capabilities
+5. **06.RAGs** - Implement knowledge-enhanced agents with file search
 
 ### Advanced Level
-6. **05.Providers** - Master MCP and Agent-to-Agent communication
-7. **07.MultiAgents** - Build collaborative agent systems
-8. **08.Workflow** - Create complex agent workflows
+6. **05.Providers** - Master MCP (Model Context Protocol) and Agent-to-Agent communication
+7. **07.Workflow** - Create complex agent workflows and orchestration patterns
 
 ## 🔧 Key Features Demonstrated
 

@@ -1,248 +1,140 @@
-# Microsoft Agent Framework for Beginners
+# Microsoft Agent Framework Examples for AI Agents Beginners
 
-Welcome to the comprehensive beginner's guide to the Microsoft Agent Framework! This directory contains hands-on tutorials, code samples, and practical examples designed to take you from zero to proficient in building AI agents using Microsoft's cutting-edge agent framework.
+This section provides comprehensive Microsoft Agent Framework examples that extend and complement the content from [Microsoft's AI Agents for Beginners](https://github.com/microsoft/ai-agents-for-beginners) curriculum. These practical code samples demonstrate how to build intelligent agents using both Python and .NET implementations of the Microsoft Agent Framework.
 
-## 🎯 Learning Path Overview
+## 🎯 Overview
 
-This beginner's section is structured as a progressive learning journey, where each module builds upon the previous one:
+The examples in this directory are designed to provide hands-on experience with Microsoft Agent Framework, covering fundamental concepts through advanced multi-agent systems. Each lesson includes both Python and .NET code samples to accommodate different development preferences and environments.
 
+## 📚 Learning Path
+
+### 01. Introduction to AI Agents
+Learn the foundational concepts of AI agents and get started with your first Microsoft Agent Framework implementation.
+
+**Code Samples:**
+- **Python:** [`python-agent-framework-travelagent.ipynb`](./01-intro-to-ai-agents/code_samples/python-agent-framework-travelagent.ipynb)
+- **.NET:** [`dotnet-agent-framework-travelagent.ipynb`](./01-intro-to-ai-agents/code_samples/dotnet-agent-framework-travelagent.ipynb)
+
+### 02. Explore Agentic Frameworks
+Dive deeper into the Microsoft Agent Framework architecture and understand different implementation patterns.
+
+**Code Samples:**
+- **Python:** [`python-agent-framework-basicagent.ipynb`](./02-explore-agentic-frameworks/code_samples/python-agent-framework-basicagent.ipynb)
+- **.NET:** [`dotnet-agent-framework-basicagent.ipynb`](./02-explore-agentic-frameworks/code_samples/dotnet-agent-framework-basicagent.ipynb)
+
+### 03. Agentic Design Patterns
+Explore common design patterns and best practices for building robust AI agents with GitHub Models integration.
+
+**Code Samples:**
+- **Python:** [`python-agent-framework-ghmodel-basicagent.ipynb`](./03-agentic-design-patterns/code_samples/python-agent-framework-ghmodel-basicagent.ipynb)
+- **.NET:** [`dotnet-agent-framework-ghmodel-basicagent.ipynb`](./03-agentic-design-patterns/code_samples/dotnet-agent-framework-ghmodel-basicagent.ipynb)
+
+### 04. Tool Use and Integration
+Learn how to enhance your agents with external tools and capabilities using GitHub Models.
+
+**Code Samples:**
+- **Python:** [`python-agent-framework-ghmodel-tools.ipynb`](./04-tool-use/code_samples/python-agent-framework-ghmodel-tools.ipynb)
+- **.NET:** [`dotnet-agent-framework-ghmodels-tool.ipynb`](./04-tool-use/code_samples/dotnet-agent-framework-ghmodels-tool.ipynb)
+
+### 05. Agentic RAG (Retrieval-Augmented Generation)
+Implement knowledge-enhanced agents using Azure AI Foundry's file search capabilities.
+
+**Code Samples:**
+- **Python:** [`python-agent-framework-aifoundry-file-search.ipynb`](./05-agentic-rag/code_samples/python-agent-framework-aifoundry-file-search.ipynb)
+- **.NET:** [`dotnet-agent-framework-aifoundry-file-search.ipynb`](./05-agentic-rag/code_samples/dotnet-agent-framework-aifoundry-file-search.ipynb)
+
+**Supporting Files:**
+- [`document.md`](./05-agentic-rag/code_samples/document.md) - Sample document for RAG demonstrations
+
+### 07. Planning and Design
+Explore advanced planning capabilities and design patterns with GitHub Models integration.
+
+**Code Samples:**
+- **Python:** [`python-agent-framrwork-ghmodel-planningdesign.ipynb`](./07-planning-design/code_samples/python-agent-framrwork-ghmodel-planningdesign.ipynb)
+- **.NET:** [`dotnet-agent-framrwork-ghmodel-planningdesign.ipynb`](./07-planning-design/code_samples/dotnet-agent-framrwork-ghmodel-planningdesign.ipynb)
+
+### 08. Multi-Agent Systems
+Build collaborative multi-agent workflows using GitHub Models for complex problem-solving scenarios.
+
+**Code Samples:**
+- **Python:** [`python-agent-framework-ghmodel-workflow-multi-agents.ipynb`](./08-multi-agent/code_samples/python-agent-framework-ghmodel-workflow-multi-agents.ipynb)
+- **.NET:** [`dotnet-agent-framework-ghmodel-workflow-multi-agents.ipynb`](./08-multi-agent/code_samples/dotnet-agent-framework-ghmodel-workflow-multi-agents.ipynb)
+
+### 09. Metacognition
+*Coming Soon* - Advanced metacognitive capabilities for self-aware agents.
+
+### 10. AI Agents in Production
+*Coming Soon* - Best practices for deploying and managing agents in production environments.
+
+### 11. Agentic Protocols
+*Coming Soon* - Advanced communication protocols and standards for agent interactions.
+
+### 12. Context Engineering
+*Coming Soon* - Advanced techniques for context management and optimization.
+
+## 🛠 Prerequisites
+
+### Development Environment
+- **Python:** Python 3.10 or higher
+- **.NET:** .NET 9.0 or higher
+- Visual Studio Code with appropriate extensions
+
+### Required Services
+- **Azure AI Foundry:** For RAG examples and advanced capabilities
+- **GitHub Models:** For GitHub-integrated examples
+- **Azure OpenAI Service:** For certain provider examples
+
+### Environment Configuration
+
+Create a `.env` file or set environment variables for the examples:
+
+```env
+# GitHub Models Configuration
+GITHUB_TOKEN=your_github_token
+GITHUB_ENDPOINT=https://models.inference.ai.azure.com
+GITHUB_MODEL_ID=gpt-4o-mini
+
+# Azure AI Foundry Configuration
+FOUNDRY_PROJECT_ENDPOINT=your_foundry_endpoint
+FOUNDRY_MODEL_DEPLOYMENT_NAME=your_model_name
+
+# Azure OpenAI Configuration (if needed)
+AZURE_OPENAI_ENDPOINT=your_aoai_endpoint
+AZURE_OPENAI_API_KEY=your_aoai_key
+AZURE_OPENAI_DEPLOYMENT_NAME=your_deployment_name
 ```
-00.ForBeginners/
-├── 01-intro-to-ai-agents/          # 🚀 Start here: Your first AI agent
-├── 02-explore-agentic-frameworks/  # 🔍 Understand agent architectures
-├── 03-agentic-design-patterns/     # 🏗️ Learn design patterns
-├── 04-tool-use/                    # 🛠️ Add tools to your agents
-├── 05-agentic-rag/                 # 📚 Knowledge-enhanced agents
-├── 07-planning-design/             # 🧠 Strategic planning agents
-├── 08-multi-agent/                 # 🤝 Multi-agent collaboration
-├── 09-metacognition/               # 🎭 Self-aware agents
-├── 10-ai-agents-production/        # 🚀 Deploy to production
-├── 11-agentic-protocols/           # 🔄 Communication protocols
-└── 12-context-engineering/         # 📝 Context management
-```
-
-## 📚 Module Details
-
-### 1. Introduction to AI Agents
-**📁 Path:** `01-intro-to-ai-agents/`
-
-Your journey begins here! Learn the fundamentals of AI agents and create your first travel planning agent.
-
-**🔗 Code Samples:**
-- [**Python Travel Agent**](01-intro-to-ai-agents/code_samples/python-agent-framework-travelagent.ipynb) - Build a vacation planning assistant
-- [**C# Travel Agent**](01-intro-to-ai-agents/code_samples/dotnet-agent-framework-travelagent.ipynb) - .NET implementation
-
-**🎯 What you'll learn:**
-- Basic agent concepts and architecture
-- Setting up your development environment
-- Creating your first conversational agent
-- Working with OpenAI and GitHub Models
-
-### 2. Explore Agentic Frameworks
-**📁 Path:** `02-explore-agentic-frameworks/`
-
-Dive deeper into the Microsoft Agent Framework architecture and understand how agents think and operate.
-
-**🔗 Code Samples:**
-- [**Python Basic Agent**](02-explore-agentic-frameworks/code_samples/python-agent-framework-basicagent.ipynb) - Core framework concepts
-- [**C# Basic Agent**](02-explore-agentic-frameworks/code_samples/dotnet-agent-framework-basicagent.ipynb) - .NET framework exploration
-
-**🎯 What you'll learn:**
-- Agent lifecycle and execution patterns
-- Message handling and conversation flow
-- Framework components and services
-- Best practices for agent design
-
-### 3. Agentic Design Patterns
-**📁 Path:** `03-agentic-design-patterns/`
-
-Master the fundamental design patterns that make agents effective and scalable.
-
-**🎯 What you'll learn:**
-- Common agent design patterns
-- Separation of concerns in agent architecture
-- Reusable agent components
-- Scalability considerations
-
-### 4. Tool Use
-**📁 Path:** `04-tool-use/`
-
-Transform your agents from conversational to functional by adding tool capabilities.
-
-**🔗 Code Samples:**
-- [**Python Tools Agent**](04-tool-use/code_samples/python-agent-framework-tools.ipynb) - Function calling and tool integration
-- [**C# Tools Agent**](04-tool-use/code_samples/dotnet-agent-framework-tools.ipynb) - .NET tool implementation
-
-**🎯 What you'll learn:**
-- Function calling and tool integration
-- Custom tool development
-- Tool selection and orchestration
-- Error handling in tool execution
-
-### 5. Agentic RAG (Retrieval-Augmented Generation)
-**📁 Path:** `05-agentic-rag/`
-
-Build knowledge-enhanced agents that can access and reason over external information sources.
-
-**🔗 Code Samples:**
-- [**Python RAG Agent**](05-agentic-rag/python-agent-framework-aifoundry-file-search.ipynb) - Document search and retrieval
-- [**C# RAG Agent**](05-agentic-rag/dotnet-agent-framework-aifoundry-file-search.ipynb) - .NET file search implementation
-
-**🎯 What you'll learn:**
-- File search and document retrieval
-- Knowledge base integration
-- Azure AI Foundry file search
-- Information synthesis and reasoning
-
-### 6. Planning and Design
-**📁 Path:** `07-planning-design/`
-
-Create agents that can break down complex tasks and create strategic plans.
-
-**🔗 Code Samples:**
-- [**Python Planning Agent**](07-planning-design/code_samples/python-agent-framrwork-ghmodel-planningdesign.ipynb) - Strategic task planning
-- [**C# Planning Agent**](07-planning-design/code_samples/dotnet-agent-framrwork-ghmodel-planningdesign.ipynb) - .NET planning implementation
-
-**🎯 What you'll learn:**
-- Task decomposition and planning
-- Strategic thinking in agents
-- Complex workflow orchestration
-- Decision-making frameworks
-
-### 7. Multi-Agent Systems
-**📁 Path:** `08-multi-agent/`
-
-Learn how to create collaborative agent systems where multiple agents work together.
-
-**🎯 What you'll learn:**
-- Agent-to-agent communication
-- Collaborative problem solving
-- Distributed agent architectures
-- Coordination and synchronization
-
-### 8. Metacognition
-**📁 Path:** `09-metacognition/`
-
-Build self-aware agents that can reflect on their own thinking and improve their performance.
-
-**🎯 What you'll learn:**
-- Self-reflection in AI agents
-- Performance monitoring and improvement
-- Adaptive behavior patterns
-- Learning from experience
-
-### 9. Production Deployment
-**📁 Path:** `10-ai-agents-production/`
-
-Prepare your agents for real-world deployment with production-ready patterns and practices.
-
-**🎯 What you'll learn:**
-- Production deployment strategies
-- Monitoring and observability
-- Security and compliance
-- Scaling considerations
-
-### 10. Agentic Protocols
-**📁 Path:** `11-agentic-protocols/`
-
-Master advanced communication protocols for sophisticated agent interactions.
-
-**🎯 What you'll learn:**
-- Inter-agent communication protocols
-- Message standards and formats
-- Protocol design patterns
-- Integration with external systems
-
-### 11. Context Engineering
-**📁 Path:** `12-context-engineering/`
-
-Learn advanced techniques for managing context and memory in long-running conversations.
-
-**🎯 What you'll learn:**
-- Context window management
-- Memory systems and persistence
-- Conversation state management
-- Context optimization techniques
 
 ## 🚀 Getting Started
 
-### Prerequisites
+1. **Choose your preferred language:** Python or .NET
+2. **Start with lesson 01:** Introduction to AI Agents
+3. **Follow the sequential path:** Each lesson builds upon previous concepts
+4. **Experiment with the code:** Modify examples to understand the framework better
+5. **Apply learnings:** Use the patterns in your own agent projects
 
-**For Python Development:**
-- Python 3.10 or higher
-- pip package manager
-- Virtual environment (recommended)
+## 📝 Code Sample Structure
 
-**For .NET Development:**
-- .NET 9.0 or higher
-- Visual Studio 2022 or VS Code with C# extension
+Each code sample is provided as a Jupyter notebook (`.ipynb`) containing:
+- **Detailed explanations** of concepts and implementation
+- **Step-by-step code** with comments and documentation
+- **Practical examples** you can run and modify
+- **Best practices** for Microsoft Agent Framework usage
 
-**Required Services:**
-- Azure OpenAI Service OR GitHub Models access
-- Azure AI Foundry (for advanced examples)
-- Azure CLI (authenticated)
+## 🔗 Related Resources
 
-### Quick Setup
-
-
-```bash
-
-pip uninstall agent-framework -y
-pip uninstall agent-framework-azure -y
-pip uninstall agent-framework-foundry -y
-
-! pip install -r Installation\code_samples\python\requirements.txt --constraint Installation\code_samples\python\constraints.txt -U
-
-
-```
-
-### .NET Environment
-- .NET 9.0 or higher
-- Visual Studio 2022 or VS Code with C# extension
-
-
-```bash
-
-git clone https://github.com/microsoft/agent-framework.git
-
-cd agent-framework
-
-dotnet build agent-framework-dotnet.slnx
-
-
-```
-
-## 🎯 Learning Objectives
-
-By completing this beginner's series, you will:
-
-- ✅ **Understand AI Agent Fundamentals** - Core concepts, architecture, and design principles
-- ✅ **Build Production-Ready Agents** - From simple chatbots to complex reasoning systems
-- ✅ **Master Tool Integration** - Function calling, external APIs, and custom tools
-- ✅ **Implement RAG Systems** - Knowledge-enhanced agents with document retrieval
-- ✅ **Create Multi-Agent Systems** - Collaborative agents working together
-- ✅ **Deploy to Production** - Real-world deployment and scaling strategies
+- [Microsoft AI Agents for Beginners](https://github.com/microsoft/ai-agents-for-beginners) - Foundational curriculum
+- [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) - Official framework repository
+- [Azure AI Foundry](https://azure.microsoft.com/en-us/products/ai-foundry) - AI development platform
+- [GitHub Models](https://github.com/marketplace/models) - GitHub's AI model marketplace
 
 ## 🤝 Contributing
 
-We welcome contributions to improve these tutorials! Please feel free to:
-- Submit bug fixes or improvements
-- Add new examples or use cases
-- Enhance documentation
-- Share your agent creations
-
-## 📄 License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-## 🆘 Getting Help
-
-If you encounter issues:
-1. Check the individual module READMEs for specific guidance
-2. Review the code samples for implementation details
-3. Open an issue in the repository
-4. Join our community discussions
+We welcome contributions to improve these examples:
+- Report issues or bugs
+- Suggest new examples or improvements
+- Submit pull requests with enhancements
+- Share your own agent implementations
 
 ---
 
-**Ready to build the future with AI agents?** Start your journey with [Module 1: Introduction to AI Agents](01-intro-to-ai-agents/) and discover the power of the Microsoft Agent Framework! 🚀
+**Ready to build intelligent agents?** Start with [lesson 01](./01-intro-to-ai-agents/) and begin your Microsoft Agent Framework journey! 🚀
