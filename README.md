@@ -41,7 +41,7 @@ This repository provides step-by-step tutorials and real-world examples covering
 pip uninstall agent-framework -y
 pip uninstall agent-framework-azure-ai -y
 
-! pip install -r Installation\code_samples\python\requirements.txt --constraint Installation\code_samples\python\constraints.txt -U
+pip install -r Installation\requirements.txt --constraint Installation\constraints.txt -U
 
 
 ```
@@ -61,6 +61,26 @@ dotnet build agent-framework-dotnet.slnx
 
 
 ```
+
+
+## 💻 Platform-Specific Setup
+
+### Windows ARM64 Configuration
+
+If you're running on Windows ARM64, you may need to configure OpenSSL for certain dependencies:
+
+```bash
+git config --global core.longpaths true
+winget install ShiningLight.OpenSSL.Dev
+$env:OPENSSL_DIR="C:\Program Files\OpenSSL-Win64-ARM"
+$env:OPENSSL_LIB_DIR="C:\Program Files\OpenSSL-Win64-ARM\lib\VC\arm64\MT"
+$env:OPENSSL_STATIC="1"
+```
+
+### Cross-Platform Compatibility
+- **Linux**: Standard pip installation
+- **macOS**: Homebrew for system dependencies
+- **Windows x64**: Standard Windows installation
 
 ### Required Services
 - Azure OpenAI Service and Azure AI Foundry
