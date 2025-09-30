@@ -39,9 +39,10 @@ This repository provides step-by-step tutorials and real-world examples covering
 ```bash
 
 pip uninstall agent-framework -y
+pip uninstall agent-framework-core -y
 pip uninstall agent-framework-azure-ai -y
 
-pip install -r Installation\requirements.txt --constraint Installation\constraints.txt -U
+pip install -r Installation\requirements.txt 
 
 
 ```
