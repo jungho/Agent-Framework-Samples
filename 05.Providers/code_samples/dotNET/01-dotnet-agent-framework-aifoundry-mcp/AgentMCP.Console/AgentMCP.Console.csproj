@@ -13,11 +13,8 @@
     <PackageReference Include="DotNetEnv" Version="3.1.1" />
     <PackageReference Include="ModelContextProtocol" Version="0.3.0-preview.4" />
     <PackageReference Include="System.Linq.Async" Version="6.0.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="C:\Users\kinfeylo\Documents\Agent\agent-framework\dotnet\src\Microsoft.Agents.AI.AzureAI\Microsoft.Agents.AI.AzureAI.csproj" />
-    <ProjectReference Include="C:\Users\kinfeylo\Documents\Agent\agent-framework\dotnet\src\Microsoft.Agents.AI\Microsoft.Agents.AI.csproj" />
+    <PackageReference Include="Microsoft.Agents.AI.AzureAI" Version="1.0.0-preview.251001.2" />
+    <PackageReference Include="Microsoft.Agents.AI" Version="1.0.0-preview.251001.2" />
   </ItemGroup>
 
 </Project>
