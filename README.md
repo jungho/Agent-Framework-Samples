@@ -60,18 +60,6 @@ pip install agent-framework-microsoft agent-framework-azure-ai
 - Visual Studio 2022 or VS Code with C# extension
 
 
-```bash
-
-git clone https://github.com/microsoft/agent-framework.git
-
-cd agent-framework
-
-dotnet build agent-framework-dotnet.slnx
-
-
-```
-
-
 ## 💻 Platform-Specific Setup
 
 ### Windows ARM64 Configuration
