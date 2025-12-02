@@ -1,6 +1,6 @@
 > English overview of the case studies listed below.
 
-# Case Studies in 09.Cases
+# Case Studies
 
 Each subfolder in this directory showcases a different production-ready scenario that applies Microsoft Agent Framework and Microsoft Foundry tooling to real-world workflows. The projects mix multi-agent orchestration, web/UI integrations, and observability so you can see how agents behave across marketing, travel guidance, and enterprise process automation contexts.
 
